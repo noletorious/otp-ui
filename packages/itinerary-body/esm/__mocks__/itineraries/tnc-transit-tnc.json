@@ -1,0 +1,386 @@
+{
+  "duration": 690,
+  "endTime": 1684865406000,
+  "startTime": 1684864716000,
+  "waitingTime": 0,
+  "walkTime": 330,
+  "fare": {
+    "fare": {
+      "regular": {
+        "currency": {
+          "symbol": "$",
+          "currency": "USD",
+          "defaultFractionDigits": 2,
+          "currencyCode": "USD"
+        },
+        "cents": 950
+      }
+    },
+    "details": {}
+  },
+  "legs": [
+    {
+      "rentedBike": false,
+      "interlineWithPreviousLeg": false,
+      "departureDelay": 0,
+      "arrivalDelay": 0,
+      "distance": 643.65,
+      "duration": 144,
+      "endTime": 1684864860000,
+      "mode": "CAR",
+      "rideHailingEstimate": {
+        "provider": {
+          "id": "uber"
+        },
+        "arrival": "PT4M",
+        "minPrice": {
+          "currency": {
+            "code": "USD"
+          },
+          "amount": 17
+        },
+        "maxPrice": {
+          "currency": {
+            "code": "USD"
+          },
+          "amount": 19
+        }
+      },
+      "realTime": false,
+      "realtimeState": null,
+      "startTime": 1684864716000,
+      "transitLeg": false,
+      "trip": null,
+      "agency": null,
+      "legGeometry": {
+        "length": 33,
+        "points": "{lztG|pxkVrAALA?QCcD?O?EJ?pBCN??Q?e@AqAAg@?W?C?OAqCDM?WASEOAeCFS?G?QAoB?Q?oC?i@Ae@?gBAQ"
+      },
+      "intermediateStops": null,
+      "route": null,
+      "from": {
+        "lat": 45.5241494,
+        "lon": -122.68303,
+        "name": "128 NW 12th Ave, Portland",
+        "vertexType": "NORMAL",
+        "rentalVehicle": null,
+        "stop": null
+      },
+      "to": {
+        "lat": 45.5230001,
+        "lon": -122.6766363,
+        "name": "West Burnside Street",
+        "vertexType": "NORMAL",
+        "rentalVehicle": null,
+        "stop": null
+      },
+      "steps": [
+        {
+          "distance": 54.68,
+          "lat": 45.5241463,
+          "lon": -122.6831887,
+          "relativeDirection": "DEPART",
+          "absoluteDirection": "SOUTH",
+          "stayOn": false,
+          "streetName": "Northwest 12th Avenue",
+          "area": false,
+          "alerts": [],
+          "elevationProfile": []
+        },
+        {
+          "distance": 79.48,
+          "lat": 45.5236547,
+          "lon": -122.6831692,
+          "relativeDirection": "LEFT",
+          "absoluteDirection": "EAST",
+          "stayOn": false,
+          "streetName": "Northwest Couch Street",
+          "area": false,
+          "alerts": [],
+          "elevationProfile": []
+        },
+        {
+          "distance": 79.25,
+          "lat": 45.5236734,
+          "lon": -122.6821493,
+          "relativeDirection": "RIGHT",
+          "absoluteDirection": "SOUTH",
+          "stayOn": false,
+          "streetName": "Northwest 11th Avenue",
+          "area": false,
+          "alerts": [],
+          "elevationProfile": []
+        },
+        {
+          "distance": 430.23,
+          "lat": 45.5229609,
+          "lon": -122.6821228,
+          "relativeDirection": "LEFT",
+          "absoluteDirection": "EAST",
+          "stayOn": false,
+          "streetName": "West Burnside Street",
+          "area": false,
+          "alerts": [],
+          "elevationProfile": []
+        }
+      ]
+    },
+    {
+      "rentedBike": false,
+      "interlineWithPreviousLeg": false,
+      "departureDelay": 0,
+      "arrivalDelay": 0,
+      "distance": 0,
+      "duration": 60,
+      "endTime": 1684864920000,
+      "mode": "WALK",
+      "rideHailingEstimate": null,
+      "realTime": false,
+      "realtimeState": null,
+      "startTime": 1684864860000,
+      "transitLeg": false,
+      "trip": null,
+      "agency": null,
+      "legGeometry": {
+        "length": 2,
+        "points": "weztG~gwkVJ?"
+      },
+      "intermediateStops": null,
+      "route": null,
+      "from": {
+        "lat": 45.5230001,
+        "lon": -122.6766363,
+        "name": "West Burnside Street",
+        "vertexType": "NORMAL",
+        "rentalVehicle": null,
+        "stop": null
+      },
+      "to": {
+        "lat": 45.522948,
+        "lon": -122.676635,
+        "name": "W Burnside & SW 6th",
+        "vertexType": "TRANSIT",
+        "rentalVehicle": null,
+        "stop": {
+          "id": "U3RvcDp0cmltZXQ6Nzky",
+          "code": "792",
+          "gtfsId": "trimet:792",
+          "alerts": []
+        }
+      },
+      "steps": []
+    },
+    {
+      "rentedBike": null,
+      "interlineWithPreviousLeg": false,
+      "departureDelay": 0,
+      "arrivalDelay": 0,
+      "distance": 1780.82,
+      "duration": 360,
+      "endTime": 1684865280000,
+      "mode": "BUS",
+      "rideHailingEstimate": null,
+      "realTime": false,
+      "realtimeState": null,
+      "startTime": 1684864920000,
+      "transitLeg": true,
+      "trip": {
+        "id": "VHJpcDp0cmltZXQ6MTIzNDA1MTc",
+        "gtfsId": "trimet:12340517",
+        "tripHeadsign": null
+      },
+      "agency": {
+        "name": "TriMet",
+        "id": "QWdlbmN5OnRyaW1ldDpUUklNRVQ",
+        "timezone": "America/Los_Angeles",
+        "url": "https://trimet.org/",
+        "alerts": []
+      },
+      "legGeometry": {
+        "length": 53,
+        "points": "weztG~gwkV?]?C?k@AeBA}@?GA{@AiCAY?e@CiCCiD???_@?[@kBIS@}A@iC@aAFaL@yA@{AF{LDiHBkCFUA}@?iAAO?K?qE?K?_@?kA?e@@m@?aB?gB?gA?A?}A???a@?aC?iA@aC?gA?U?uD@U?iC"
+      },
+      "intermediateStops": [
+        {
+          "lat": 45.523009,
+          "lon": -122.672529,
+          "name": "W Burnside & SW 2nd",
+          "stopCode": "9526",
+          "stopId": "U3RvcDp0cmltZXQ6OTUyNg",
+          "locationType": "STOP"
+        },
+        {
+          "lat": 45.522847,
+          "lon": -122.657843,
+          "name": "E Burnside & SE 8th",
+          "stopCode": "820",
+          "stopId": "U3RvcDp0cmltZXQ6ODIw",
+          "locationType": "STOP"
+        }
+      ],
+      "route": {
+        "shortName": "20",
+        "longName": "Burnside/Stark",
+        "color": null,
+        "textColor": null,
+        "id": "Um91dGU6dHJpbWV0OjIw",
+        "type": 3,
+        "alerts": []
+      },
+      "from": {
+        "lat": 45.522948,
+        "lon": -122.676635,
+        "name": "W Burnside & SW 6th",
+        "vertexType": "TRANSIT",
+        "rentalVehicle": null,
+        "stop": {
+          "id": "U3RvcDp0cmltZXQ6Nzky",
+          "code": "792",
+          "gtfsId": "trimet:792",
+          "alerts": []
+        }
+      },
+      "to": {
+        "lat": 45.522823,
+        "lon": -122.653824,
+        "name": "E Burnside & SE 12th",
+        "vertexType": "TRANSIT",
+        "rentalVehicle": null,
+        "stop": {
+          "id": "U3RvcDp0cmltZXQ6MTMzMjc",
+          "code": "13327",
+          "gtfsId": "trimet:13327",
+          "alerts": []
+        }
+      },
+      "steps": []
+    },
+    {
+      "rentedBike": false,
+      "interlineWithPreviousLeg": false,
+      "departureDelay": 0,
+      "arrivalDelay": 0,
+      "distance": 0,
+      "duration": 60,
+      "endTime": 1684865340000,
+      "mode": "WALK",
+      "rideHailingEstimate": null,
+      "realTime": false,
+      "realtimeState": null,
+      "startTime": 1684865280000,
+      "transitLeg": false,
+      "trip": null,
+      "agency": null,
+      "legGeometry": {
+        "length": 2,
+        "points": "sdztGlyrkVO?"
+      },
+      "intermediateStops": null,
+      "route": null,
+      "from": {
+        "lat": 45.522823,
+        "lon": -122.653824,
+        "name": "E Burnside & SE 12th",
+        "vertexType": "TRANSIT",
+        "rentalVehicle": null,
+        "stop": {
+          "id": "U3RvcDp0cmltZXQ6MTMzMjc",
+          "code": "13327",
+          "gtfsId": "trimet:13327",
+          "alerts": []
+        }
+      },
+      "to": {
+        "lat": 45.522907,
+        "lon": -122.653824,
+        "name": "East Burnside Street",
+        "vertexType": "NORMAL",
+        "rentalVehicle": null,
+        "stop": null
+      },
+      "steps": []
+    },
+    {
+      "rentedBike": false,
+      "interlineWithPreviousLeg": false,
+      "departureDelay": 0,
+      "arrivalDelay": 0,
+      "distance": 334.71,
+      "duration": 66,
+      "endTime": 1684865406000,
+      "mode": "CAR",
+      "rideHailingEstimate": {
+        "provider": {
+          "id": "uber"
+        },
+        "arrival": "PT2M",
+        "minPrice": {
+          "currency": {
+            "code": "USD"
+          },
+          "amount": 17
+        },
+        "maxPrice": {
+          "currency": {
+            "code": "USD"
+          },
+          "amount": 18
+        }
+      },
+      "realTime": false,
+      "realtimeState": null,
+      "startTime": 1684865340000,
+      "transitLeg": false,
+      "trip": null,
+      "agency": null,
+      "legGeometry": {
+        "length": 17,
+        "points": "ceztGlyrkV?I?_@U?c@?A?]?A?c@?M?O?oBAO?Q?uDAuA?A?"
+      },
+      "intermediateStops": null,
+      "route": null,
+      "from": {
+        "lat": 45.522907,
+        "lon": -122.653824,
+        "name": "East Burnside Street",
+        "vertexType": "NORMAL",
+        "rentalVehicle": null,
+        "stop": null
+      },
+      "to": {
+        "lat": 45.525773,
+        "lon": -122.6535042,
+        "name": "407 NE 12th Ave, Portland",
+        "vertexType": "NORMAL",
+        "rentalVehicle": null,
+        "stop": null
+      },
+      "steps": [
+        {
+          "distance": 16.06,
+          "lat": 45.522907,
+          "lon": -122.653824,
+          "relativeDirection": "DEPART",
+          "absoluteDirection": "EAST",
+          "stayOn": false,
+          "streetName": "East Burnside Street",
+          "area": false,
+          "alerts": [],
+          "elevationProfile": []
+        },
+        {
+          "distance": 318.65,
+          "lat": 45.5229076,
+          "lon": -122.6536179,
+          "relativeDirection": "LEFT",
+          "absoluteDirection": "NORTH",
+          "stayOn": false,
+          "streetName": "Northeast 12th Avenue",
+          "area": false,
+          "alerts": [],
+          "elevationProfile": []
+        }
+      ]
+    }
+  ]
+}
