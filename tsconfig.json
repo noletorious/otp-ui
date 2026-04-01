@@ -1,8 +1,19 @@
 {
-  "extends": "../../tsconfig.json",
   "compilerOptions": {
+    "target": "es5",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "lib": ["es5", "dom", "dom.iterable"],
+    "jsx": "react",
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
     "outDir": "./lib",
-    "preserveSymlinks": true
+    "preserveSymlinks": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "emitDeclarationOnly": true,
+    "noEmitOnError": false
   },
   "include": ["src/**/*"],
   "exclude": ["**/*.story.tsx", "**/*.story.ts", "src/stories/**/*"]
