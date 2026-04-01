@@ -9,6 +9,11 @@ import * as Styled from "./styled";
 import { getPlaceName, parseOTP2Minute } from "./util";
 import type { RouteDescriptionProps, RouteDescriptionFooterProps, ToRouteAbbreviationFunction, LegDestination, TimeColumnContentProps, LegSharedProps, LineColumnContentProps, PlaceNameProps, SetActiveLegFunction, FrameLegFunction, TripSection, SetViewedTripFunction, AccessLegFooterProps, TransitLegFooterProps, TransitLegSubheaderProps, TransitLegSummaryProps, PlaceRowProps, ItineraryBodyProps } from "./types";
 import * as Types from "./types";
+declare global {
+	interface Window {
+		location: Location;
+	}
+}
 export default ItineraryBody;
 export { AccessibilityRating, AccessLegBody, Defaults, OtpReactRedux, PlaceRow, RouteBadge, Styled, TransitLegBody, getPlaceName, parseOTP2Minute, RouteDescriptionProps, RouteDescriptionFooterProps, ToRouteAbbreviationFunction, LegDestination, TimeColumnContentProps, LegSharedProps, LineColumnContentProps, PlaceNameProps, SetActiveLegFunction, FrameLegFunction, TripSection, SetViewedTripFunction, AccessLegFooterProps, TransitLegFooterProps, TransitLegSubheaderProps, TransitLegSummaryProps, PlaceRowProps, ItineraryBodyProps, Types };
 //# sourceMappingURL=index.d.ts.map
