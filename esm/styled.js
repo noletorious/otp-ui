@@ -150,13 +150,17 @@ export var ItineraryBody = styled.ol.withConfig({
   displayName: "styled__ItineraryBody",
   componentId: "sc-1q8npbl-22"
 })(["list-style:none;padding:0;"]);
+export var AccessLegDescriptionHeading = styled.span.withConfig({
+  displayName: "styled__AccessLegDescriptionHeading",
+  componentId: "sc-1q8npbl-23"
+})(["margin:0;"]);
 export var LegBody = styled.div.withConfig({
   displayName: "styled__LegBody",
-  componentId: "sc-1q8npbl-23"
+  componentId: "sc-1q8npbl-24"
 })(["color:", ";font-size:13px;padding-bottom:12px;"], grey[700]);
 export var LegClickable = styled.div.withConfig({
   displayName: "styled__LegClickable",
-  componentId: "sc-1q8npbl-24"
+  componentId: "sc-1q8npbl-25"
 })([""]);
 
 /**
@@ -166,13 +170,13 @@ export var LegClickable = styled.div.withConfig({
  */
 export var LegClickableButton = styled(TransparentButton).withConfig({
   displayName: "styled__LegClickableButton",
-  componentId: "sc-1q8npbl-25"
+  componentId: "sc-1q8npbl-26"
 })(["bottom:0;cursor:pointer;left:0;position:absolute;right:0;top:0;width:100%;z-index:1;"]);
 
 // Use <span> for correct semantics as it is the contents of a button or a link.
 export var LegDescription = styled.span.withConfig({
   displayName: "styled__LegDescription",
-  componentId: "sc-1q8npbl-26"
+  componentId: "sc-1q8npbl-27"
 })(["align-items:center;display:inline-flex;line-height:16px;min-height:31px;position:relative;"]);
 
 // additional description added to ClickableLeg for screenreaders
@@ -180,11 +184,11 @@ export var InvisibleAdditionalDetails = styled.span.attrs({
   className: "invisible-additional-details"
 }).withConfig({
   displayName: "styled__InvisibleAdditionalDetails",
-  componentId: "sc-1q8npbl-27"
+  componentId: "sc-1q8npbl-28"
 })(["display:inline-block;grid-row-start:2;grid-column-start:1;height:0;overflow:hidden;width:0;"]);
 export var LegDescriptionHeadsignPrefix = styled.span.withConfig({
   displayName: "styled__LegDescriptionHeadsignPrefix",
-  componentId: "sc-1q8npbl-28"
+  componentId: "sc-1q8npbl-29"
 })(["font-weight:200;"]);
 
 /**
@@ -193,7 +197,7 @@ export var LegDescriptionHeadsignPrefix = styled.span.withConfig({
  */
 export var LegDescriptionMode = styled.span.withConfig({
   displayName: "styled__LegDescriptionMode",
-  componentId: "sc-1q8npbl-29"
+  componentId: "sc-1q8npbl-30"
 })(["font-weight:inherit;"]);
 
 /**
@@ -202,51 +206,51 @@ export var LegDescriptionMode = styled.span.withConfig({
  */
 export var LegDescriptionPlace = styled.span.withConfig({
   displayName: "styled__LegDescriptionPlace",
-  componentId: "sc-1q8npbl-30"
+  componentId: "sc-1q8npbl-31"
 })(["font-weight:inherit;"]);
 export var LegDescriptionRouteLongName = styled.span.withConfig({
   displayName: "styled__LegDescriptionRouteLongName",
-  componentId: "sc-1q8npbl-31"
+  componentId: "sc-1q8npbl-32"
 })(["font-size:13px;font-weight:500;"]);
 export var LegDescriptionRouteShortName = styled.span.withConfig({
   displayName: "styled__LegDescriptionRouteShortName",
-  componentId: "sc-1q8npbl-32"
+  componentId: "sc-1q8npbl-33"
 })(["font-weight:800;margin-right:6px;"]);
 export var LegDescriptionForTransit = styled(LegDescription).withConfig({
   displayName: "styled__LegDescriptionForTransit",
-  componentId: "sc-1q8npbl-33"
+  componentId: "sc-1q8npbl-34"
 })(["color:", ";margin-top:5px;"], grey[700]);
 export var LegIconContainer = styled.span.withConfig({
   displayName: "styled__LegIconContainer",
-  componentId: "sc-1q8npbl-34"
+  componentId: "sc-1q8npbl-35"
 })(["img,svg{margin-right:6px;height:24px;width:24px;vertical-align:bottom;}"]);
 export var LegIconAndRouteShortName = styled.span.withConfig({
   displayName: "styled__LegIconAndRouteShortName",
-  componentId: "sc-1q8npbl-35"
+  componentId: "sc-1q8npbl-36"
 })(["flex-shrink:0;"]);
 export var LegLine = styled.div.withConfig({
   displayName: "styled__LegLine",
-  componentId: "sc-1q8npbl-36"
+  componentId: "sc-1q8npbl-37"
 })(["position:relative;left:50%;transform:translateX(-50%);height:100%;"]);
 export var LineBadgeContainer = styled.div.withConfig({
   displayName: "styled__LineBadgeContainer",
-  componentId: "sc-1q8npbl-37"
+  componentId: "sc-1q8npbl-38"
 })(["width:30px;height:30px;border-radius:50%;position:absolute;left:50%;top:0;transform:translate(-51%,-10%);"]);
 export var LineColumn = styled.div.withConfig({
   displayName: "styled__LineColumn",
-  componentId: "sc-1q8npbl-38"
+  componentId: "sc-1q8npbl-39"
 })(["grid-column-start:2;grid-row:span 2;padding-right:5px;"]);
 export var LegDetails = styled.span.withConfig({
   displayName: "styled__LegDetails",
-  componentId: "sc-1q8npbl-39"
+  componentId: "sc-1q8npbl-40"
 })(["display:grid;grid-template-columns:130px auto;"]);
 export var PlaceRowWrapper = styled.li.withConfig({
   displayName: "styled__PlaceRowWrapper",
-  componentId: "sc-1q8npbl-40"
+  componentId: "sc-1q8npbl-41"
 })(["max-width:500px;display:grid;grid-template-areas:\"time line title\" \"time line instructions\";grid-template-columns:65px 30px auto;"]);
 export var PreviewContainer = styled.div.withConfig({
   displayName: "styled__PreviewContainer",
-  componentId: "sc-1q8npbl-41"
+  componentId: "sc-1q8npbl-42"
 })(["background-color:", ";border-color:", ";border-radius:5px;border-style:solid;border-width:1px;display:inline-block;font-style:normal;grid-column:2;grid-row:1;margin:0 4px;position:relative;text-align:center;text-decoration:none;vertical-align:middle;width:75%;&:hover{border-color:", ";background-color:#f6f8fa;}"], function (props) {
   return props.active && grey[50];
 }, function (props) {
@@ -254,15 +258,15 @@ export var PreviewContainer = styled.div.withConfig({
 }, blue[100]);
 export var TimeColumn = styled.div.withConfig({
   displayName: "styled__TimeColumn",
-  componentId: "sc-1q8npbl-42"
+  componentId: "sc-1q8npbl-43"
 })(["grid-column-start:1;grid-row:1 / span 2;padding-right:5px;font-size:0.9em;"]);
 export var MapButton = styled(LinkButton).withConfig({
   displayName: "styled__MapButton",
-  componentId: "sc-1q8npbl-43"
+  componentId: "sc-1q8npbl-44"
 })(["padding:3px 10px 3px 10px;border:0;margin-top:-15px;width:35px;height:35px;&:hover{cursor:pointer;}"]);
 export var MapButtonColumn = styled(LightBorderDiv).withConfig({
   displayName: "styled__MapButtonColumn",
-  componentId: "sc-1q8npbl-44"
+  componentId: "sc-1q8npbl-45"
 })(["flex:0 0 25px;grid-column:-1;"]);
 export var MapIcon = styled(Map).attrs(function (props) {
   return {
@@ -273,47 +277,47 @@ export var MapIcon = styled(Map).attrs(function (props) {
   };
 }).withConfig({
   displayName: "styled__MapIcon",
-  componentId: "sc-1q8npbl-45"
+  componentId: "sc-1q8npbl-46"
 })([""]);
 export var PlaceDetails = styled.div.withConfig({
   displayName: "styled__PlaceDetails",
-  componentId: "sc-1q8npbl-46"
+  componentId: "sc-1q8npbl-47"
 })(["grid-row-start:2;grid-column-start:3;grid-area:instructions;"]);
 export var PlaceHeader = styled.div.withConfig({
   displayName: "styled__PlaceHeader",
-  componentId: "sc-1q8npbl-47"
+  componentId: "sc-1q8npbl-48"
 })(["display:flex;font-size:1.2em;grid-row-start:1;grid-column-start:3;"]);
 export var PlaceName = styled.span.withConfig({
   displayName: "styled__PlaceName",
-  componentId: "sc-1q8npbl-48"
+  componentId: "sc-1q8npbl-49"
 })(["font-size:inherit;font-weight:bold;height:1.2em;margin:0;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;flex:1 1 auto;padding:3px 0 10px 0;"]);
 export var PlaceSubheader = styled.div.withConfig({
   displayName: "styled__PlaceSubheader",
-  componentId: "sc-1q8npbl-49"
+  componentId: "sc-1q8npbl-50"
 })(["color:", ";font-size:13px;font-weight:300;padding-top:1px;margin-bottom:10px;margin-top:-14px;"], grey[700]);
 export var PreviewDiagram = styled(TransparentButton).withConfig({
   displayName: "styled__PreviewDiagram",
-  componentId: "sc-1q8npbl-50"
+  componentId: "sc-1q8npbl-51"
 })(["padding:2px;width:100%;"]);
 export var PreviewDiagramElevationChange = styled.span.withConfig({
   displayName: "styled__PreviewDiagramElevationChange",
-  componentId: "sc-1q8npbl-51"
+  componentId: "sc-1q8npbl-52"
 })(["font-size:xx-small;&::before{content:\"\";margin:0 0.125em;}"]);
 export var PreviewDiagramElevationGain = styled(PreviewDiagramElevationChange).withConfig({
   displayName: "styled__PreviewDiagramElevationGain",
-  componentId: "sc-1q8npbl-52"
+  componentId: "sc-1q8npbl-53"
 })(["color:", ";"], red[700]);
 export var PreviewDiagramElevationLoss = styled(PreviewDiagramElevationChange).withConfig({
   displayName: "styled__PreviewDiagramElevationLoss",
-  componentId: "sc-1q8npbl-53"
+  componentId: "sc-1q8npbl-54"
 })(["color:green;"]);
 export var PreviewDiagramTitle = styled.div.withConfig({
   displayName: "styled__PreviewDiagramTitle",
-  componentId: "sc-1q8npbl-54"
+  componentId: "sc-1q8npbl-55"
 })(["font-size:small;"]);
 export var RouteBadge = styled.div.withConfig({
   displayName: "styled__RouteBadge",
-  componentId: "sc-1q8npbl-55"
+  componentId: "sc-1q8npbl-56"
 })(["text-align:center;min-width:30px;min-height:30px;font-size:1.2em;background-color:", ";color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;padding-left:1px;border:1px solid ", ";user-select:none;cursor:default;"], function (props) {
   return toSafeRouteColor(props.routeColor) || props.theme.mainColor;
 }, function (props) {
@@ -321,138 +325,138 @@ export var RouteBadge = styled.div.withConfig({
 });
 export var SROnly = styled.span.withConfig({
   displayName: "styled__SROnly",
-  componentId: "sc-1q8npbl-56"
+  componentId: "sc-1q8npbl-57"
 })(["position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0;"]);
 export var SRHidden = styled.span.attrs({
   "aria-hidden": true
 }).withConfig({
   displayName: "styled__SRHidden",
-  componentId: "sc-1q8npbl-57"
+  componentId: "sc-1q8npbl-58"
 })([""]);
 export var Steps = styled.ol.withConfig({
   displayName: "styled__Steps",
-  componentId: "sc-1q8npbl-58"
+  componentId: "sc-1q8npbl-59"
 })(["display:block;list-style:none;padding:0;"]);
 export var StepDescriptionContainer = styled.div.withConfig({
   displayName: "styled__StepDescriptionContainer",
-  componentId: "sc-1q8npbl-59"
+  componentId: "sc-1q8npbl-60"
 })(["margin-left:24px;line-height:1.25em;padding-top:1px;& > span{margin-right:1ch;}"]);
 export var StepsHeaderAndMapLink = styled.span.withConfig({
   displayName: "styled__StepsHeaderAndMapLink",
-  componentId: "sc-1q8npbl-60"
+  componentId: "sc-1q8npbl-61"
 })(["display:inline-flex;align-self:center;margin-top:10px;a{display:flex;align-items:center;justify-content:center;}"]);
 var stepsHeaderStyling = css(["color:", ";font-size:13px;font-style:normal;padding:0;"], grey[700]);
 export var StepsHeaderButton = styled(TransparentButton).withConfig({
   displayName: "styled__StepsHeaderButton",
-  componentId: "sc-1q8npbl-61"
+  componentId: "sc-1q8npbl-62"
 })(["", ""], stepsHeaderStyling);
 export var StepsHeaderSpan = styled.span.withConfig({
   displayName: "styled__StepsHeaderSpan",
-  componentId: "sc-1q8npbl-62"
+  componentId: "sc-1q8npbl-63"
 })(["", " margin-right:0.4em;"], stepsHeaderStyling);
 export var StepIconContainer = styled.div.withConfig({
   displayName: "styled__StepIconContainer",
-  componentId: "sc-1q8npbl-63"
+  componentId: "sc-1q8npbl-64"
 })(["fill:", ";float:left;height:16px;width:16px;"], grey[700]);
 export var StepRow = styled.li.withConfig({
   displayName: "styled__StepRow",
-  componentId: "sc-1q8npbl-64"
+  componentId: "sc-1q8npbl-65"
 })(["font-size:13px;margin-top:8px;color:", ";font-style:normal;"], grey[700]);
 export var StepStreetName = styled.span.withConfig({
   displayName: "styled__StepStreetName",
-  componentId: "sc-1q8npbl-65"
+  componentId: "sc-1q8npbl-66"
 })(["font-weight:500;"]);
 export var StepLength = styled.span.withConfig({
   displayName: "styled__StepLength",
-  componentId: "sc-1q8npbl-66"
+  componentId: "sc-1q8npbl-67"
 })(["font-weight:200;opacity:0.8975;padding-left:1ch;"]);
 export var StopIdSpan = styled.span.withConfig({
   displayName: "styled__StopIdSpan",
-  componentId: "sc-1q8npbl-67"
+  componentId: "sc-1q8npbl-68"
 })(["font-weight:200;font-size:0.9em;margin-left:10px;"]);
 export var StopMarker = styled.div.withConfig({
   displayName: "styled__StopMarker",
-  componentId: "sc-1q8npbl-68"
+  componentId: "sc-1q8npbl-69"
 })(["float:left;margin-left:-36px;color:#fff;"]);
 export var StopName = styled.div.withConfig({
   displayName: "styled__StopName",
-  componentId: "sc-1q8npbl-69"
+  componentId: "sc-1q8npbl-70"
 })(["color:", ";margin-top:3px;"], grey[700]);
 export var StopRow = styled.li.withConfig({
   displayName: "styled__StopRow",
-  componentId: "sc-1q8npbl-70"
+  componentId: "sc-1q8npbl-71"
 })(["z-index:30;position:relative;"]);
 export var TransitAlert = styled.li.withConfig({
   displayName: "styled__TransitAlert",
-  componentId: "sc-1q8npbl-71"
+  componentId: "sc-1q8npbl-72"
 })(["background-color:", ";border-radius:4px;color:#000;display:block;margin-top:5px;padding:8px;text-decoration:none;"], grey[50]);
 export var TransitAlertExternalLink = styled.a.withConfig({
   displayName: "styled__TransitAlertExternalLink",
-  componentId: "sc-1q8npbl-72"
+  componentId: "sc-1q8npbl-73"
 })(["align-items:baseline;display:flex;gap:5px;margin-top:0.5em;text-decoration:none;&:hover{text-decoration:underline;}"]);
 export var TransitAlertBody = styled.div.withConfig({
   displayName: "styled__TransitAlertBody",
-  componentId: "sc-1q8npbl-73"
+  componentId: "sc-1q8npbl-74"
 })(["font-size:12px;margin-left:30px;white-space:pre-wrap;"]);
 export var TransitAlertEffectiveDate = styled.div.withConfig({
   displayName: "styled__TransitAlertEffectiveDate",
-  componentId: "sc-1q8npbl-74"
+  componentId: "sc-1q8npbl-75"
 })(["margin-top:5px;margin-left:30px;font-size:12px;font-style:italic;"]);
 export var TransitAlertHeader = styled.div.withConfig({
   displayName: "styled__TransitAlertHeader",
-  componentId: "sc-1q8npbl-75"
+  componentId: "sc-1q8npbl-76"
 })(["font-size:14px;margin-left:30px;font-weight:600;"]);
 export var TransitAlertIconContainer = styled.div.withConfig({
   displayName: "styled__TransitAlertIconContainer",
-  componentId: "sc-1q8npbl-76"
+  componentId: "sc-1q8npbl-77"
 })(["float:left;font-size:18px;"]);
 export var TransitAlerts = styled.ul.withConfig({
   displayName: "styled__TransitAlerts",
-  componentId: "sc-1q8npbl-77"
+  componentId: "sc-1q8npbl-78"
 })(["display:block;margin-top:3px;padding:0;"]);
 var alertToggleStyling = css(["color:", ";display:flex;font-weight:400;margin-top:8px;padding:0;svg{margin-right:0.5em;}"], red[800]);
 export var TransitAlertToggle = styled(TransparentButton).withConfig({
   displayName: "styled__TransitAlertToggle",
-  componentId: "sc-1q8npbl-78"
+  componentId: "sc-1q8npbl-79"
 })(["cursor:\"cursor\";", ""], alertToggleStyling);
 export var TransitAlertDiv = styled.div.withConfig({
   displayName: "styled__TransitAlertDiv",
-  componentId: "sc-1q8npbl-79"
+  componentId: "sc-1q8npbl-80"
 })(["", ""], alertToggleStyling);
 export var TransitLegDetails = styled.div.withConfig({
   displayName: "styled__TransitLegDetails",
-  componentId: "sc-1q8npbl-80"
+  componentId: "sc-1q8npbl-81"
 })(["margin-top:5px;"]);
 export var TransitLegDetailsHeader = styled.div.withConfig({
   displayName: "styled__TransitLegDetailsHeader",
-  componentId: "sc-1q8npbl-81"
+  componentId: "sc-1q8npbl-82"
 })(["color:", ";display:flex;"], grey[700]);
 export var TransitLegExpandedBody = styled.div.withConfig({
   displayName: "styled__TransitLegExpandedBody",
-  componentId: "sc-1q8npbl-82"
+  componentId: "sc-1q8npbl-83"
 })(["font-size:14px;"]);
 export var TransitLegFare = styled.div.withConfig({
   displayName: "styled__TransitLegFare",
-  componentId: "sc-1q8npbl-83"
+  componentId: "sc-1q8npbl-84"
 })([""]);
 export var TransitLegSummary = styled(TransparentButton).withConfig({
   displayName: "styled__TransitLegSummary",
-  componentId: "sc-1q8npbl-84"
+  componentId: "sc-1q8npbl-85"
 })(["padding:0;"]);
 export var DefaultAlertToggleIcon = styled(ExclamationTriangle).attrs({
   size: 15
 }).withConfig({
   displayName: "styled__DefaultAlertToggleIcon",
-  componentId: "sc-1q8npbl-85"
+  componentId: "sc-1q8npbl-86"
 })([""]);
 export var DefaultAlertBodyIcon = styled(ExclamationTriangle).attrs({
   size: 18
 }).withConfig({
   displayName: "styled__DefaultAlertBodyIcon",
-  componentId: "sc-1q8npbl-86"
+  componentId: "sc-1q8npbl-87"
 })([""]);
 export var AgencyInfo = styled.div.withConfig({
   displayName: "styled__AgencyInfo",
-  componentId: "sc-1q8npbl-87"
+  componentId: "sc-1q8npbl-88"
 })(["margin-top:5px;a{color:", ";text-decoration:none;}a:hover{text-decoration:underline;}img{margin-left:5px;vertical-align:middle;}"], blue[700]);
 //# sourceMappingURL=styled.js.map

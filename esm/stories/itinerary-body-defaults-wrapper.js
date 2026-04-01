@@ -68,6 +68,8 @@ var ItineraryBodyDefaultsWrapper = /*#__PURE__*/function (_Component) {
           var _r$toString;
           return r === null || r === void 0 || (_r$toString = r.toString()) === null || _r$toString === void 0 ? void 0 : _r$toString.substr(0, 2);
         } : _this$props$toRouteAb,
+        AccessLegFooter = _this$props.AccessLegFooter,
+        TransitLegFooter = _this$props.TransitLegFooter,
         TransitLegSubheader = _this$props.TransitLegSubheader,
         TransitLegSummary = _this$props.TransitLegSummary,
         AlertToggleIcon = _this$props.AlertToggleIcon,
@@ -116,6 +118,8 @@ var ItineraryBodyDefaultsWrapper = /*#__PURE__*/function (_Component) {
         showViewTripButton: showViewTripButton,
         TimeColumnContent: TimeColumnContent,
         toRouteAbbreviation: toRouteAbbreviation,
+        AccessLegFooter: AccessLegFooter,
+        TransitLegFooter: TransitLegFooter,
         TransitLegSubheader: TransitLegSubheader,
         TransitLegSummary: TransitLegSummary || DefaultTransitLegSummary
       });
