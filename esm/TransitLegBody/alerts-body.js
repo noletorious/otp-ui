@@ -1,6 +1,6 @@
 import _typeof from "@babel/runtime/helpers/typeof";
 import { differenceInCalendarDays } from "date-fns";
-import { toDate, toZonedTime } from "date-fns-tz";
+import { toDate, utcToZonedTime } from "date-fns-tz";
 import coreUtils from "@opentripplanner/core-utils";
 import React from "react";
 import { FormattedMessage } from "react-intl";
@@ -64,7 +64,7 @@ export default function AlertsBody(_ref2) {
     // Note: Previously, we used moment.diff(..., "days"), which reports the number of whole 24-hour periods
     // between two timestamps/dates (not considering timezones or daylight time changes).
     var today = toDate(getCurrentDate(timeZone));
-    var compareDate = toZonedTime(new Date(effectiveStartDate), timeZone);
+    var compareDate = utcToZonedTime(new Date(effectiveStartDate), timeZone);
     var dayDiff = differenceInCalendarDays(compareDate, today);
     return /*#__PURE__*/React.createElement(S.TransitAlert, {
       key: i
