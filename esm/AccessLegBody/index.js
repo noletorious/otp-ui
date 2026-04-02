@@ -65,7 +65,6 @@ var AccessLegBody = /*#__PURE__*/function (_Component) {
         showApproximateTravelTime = _this$props2.showApproximateTravelTime,
         showElevationProfile = _this$props2.showElevationProfile,
         showLegIcon = _this$props2.showLegIcon,
-        AccessLegFooter = _this$props2.AccessLegFooter,
         TransitLegSubheader = _this$props2.TransitLegSubheader;
       var expanded = this.state.expanded;
       var hideDrivingDirections = (config === null || config === void 0 || (_config$itinerary = config.itinerary) === null || _config$itinerary === void 0 ? void 0 : _config$itinerary.hideDrivingDirections) && leg.mode === "CAR";
@@ -126,9 +125,7 @@ var AccessLegBody = /*#__PURE__*/function (_Component) {
         leg: leg,
         setLegDiagram: setLegDiagram,
         showElevationProfile: showElevationProfile
-      }))), AccessLegFooter && /*#__PURE__*/React.createElement(AccessLegFooter, {
-        leg: leg
-      }));
+      }))));
     }
   }]);
 }(Component);

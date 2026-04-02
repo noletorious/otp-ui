@@ -64,8 +64,7 @@ export default function AccessLegDescription(_ref) {
   var className = _ref.className,
     config = _ref.config,
     leg = _ref.leg,
-    style = _ref.style,
-    headingAs = _ref.headingAs;
+    style = _ref.style;
   var intl = useIntl();
   var companies = config.companies,
     formatDuration = config.formatDuration,
@@ -90,9 +89,8 @@ export default function AccessLegDescription(_ref) {
     /*#__PURE__*/
     // Return an HTML element which is passed a className (and style props)
     // for styled-components support.
-    React.createElement(S.AccessLegDescriptionHeading, {
-      as: headingAs !== null && headingAs !== void 0 ? headingAs : "span",
-      className: [className, isTransferLeg && distance === 0 ? "transfer-leg" : "walk-leg"].filter(Boolean).join(" "),
+    React.createElement("span", {
+      className: "".concat(className || "", " ").concat(isTransferLeg && distance === 0 ? "transfer-leg" : "walk-leg"),
       style: style
     }, distance > 0 ? /*#__PURE__*/React.createElement(FormattedMessage, {
       defaultMessage: "{mode} {distance} to {place}",

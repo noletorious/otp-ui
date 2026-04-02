@@ -126,7 +126,6 @@ var TransitLegBody = /*#__PURE__*/function (_Component) {
         showAlertEffectiveDateTimeText = _this$props2.showAlertEffectiveDateTimeText,
         showViewTripButton = _this$props2.showViewTripButton,
         timeZone = _this$props2.timeZone,
-        TransitLegFooter = _this$props2.TransitLegFooter,
         TransitLegSubheader = _this$props2.TransitLegSubheader,
         TransitLegSummary = _this$props2.TransitLegSummary,
         transitOperator = _this$props2.transitOperator;
@@ -151,7 +150,7 @@ var TransitLegBody = /*#__PURE__*/function (_Component) {
       // `!leg.alerts` is needed here so the triangle isn't shown when there are 0 alerts.
       var shouldOnlyShowAlertsExpanded = !(shouldCollapseDueToAlertCount || alwaysCollapseAlerts) || !leg.alerts;
       var expandAlerts = alertsExpanded || shouldOnlyShowAlertsExpanded;
-      var legCost = defaultFareSelector && coreUtils.itinerary.getLegCost(leg, defaultFareSelector.mediumId, defaultFareSelector.riderCategoryId, []);
+      var legCost = defaultFareSelector && coreUtils.itinerary.getLegCost(leg, defaultFareSelector.mediumId, defaultFareSelector.riderCategoryId);
       var alertLabelContents = /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(AlertToggleIcon, null), " ", /*#__PURE__*/React.createElement(FormattedMessage, {
         defaultMessage: defaultMessages["otpUi.TransitLegBody.alertsHeader"],
         description: "Number of alerts header",
@@ -286,9 +285,7 @@ var TransitLegBody = /*#__PURE__*/function (_Component) {
             seconds: leg.averageWait
           })
         }
-      }))))), TransitLegFooter && /*#__PURE__*/React.createElement(TransitLegFooter, {
-        leg: leg
-      }));
+      }))))));
     }
   }]);
 }(Component);

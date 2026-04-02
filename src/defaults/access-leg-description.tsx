@@ -10,10 +10,9 @@ import Distance from "./default-distance";
 
 const { ensureAtLeastOneMinute, toHoursMinutesSeconds } = coreUtils.time;
 
-interface Props extends HTMLAttributes<HTMLElement> {
+interface Props extends HTMLAttributes<HTMLSpanElement> {
   config: Config;
   leg: Leg;
-  headingAs?: React.ElementType;
 }
 
 /**
@@ -76,8 +75,7 @@ export default function AccessLegDescription({
   className,
   config,
   leg,
-  style,
-  headingAs
+  style
 }: Props): ReactElement {
   const intl = useIntl();
   const { companies, formatDuration, units } = config;
@@ -100,18 +98,13 @@ export default function AccessLegDescription({
   // TODO: is this causing issues with TNC legs? Do walk legs leading to a TNC
   // trip really have the same `to.stopId` as `from.stopId`?
   const isTransferLeg = to.stopId === from.stopId;
-
   return (
     // Return an HTML element which is passed a className (and style props)
     // for styled-components support.
-    <S.AccessLegDescriptionHeading
-      as={headingAs ?? "span"}
-      className={[
-        className,
+    <span
+      className={`${className || ""} ${
         isTransferLeg && distance === 0 ? "transfer-leg" : "walk-leg"
-      ]
-        .filter(Boolean)
-        .join(" ")}
+      }`}
       style={style}
     >
       {distance > 0 ? (
@@ -159,6 +152,6 @@ export default function AccessLegDescription({
           }}
         />
       )}
-    </S.AccessLegDescriptionHeading>
+    </span>
   );
 }
