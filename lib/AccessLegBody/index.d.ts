@@ -1,7 +1,7 @@
 import { Config, Leg, LegIconComponent } from "@opentripplanner/types";
 import { Component, FunctionComponent, ReactElement } from "react";
 import * as S from "../styled";
-import { SetActiveLegFunction, TransitLegSubheaderProps } from "../types";
+import { AccessLegFooterProps, SetActiveLegFunction, TransitLegSubheaderProps } from "../types";
 import AccessLegSteps from "./access-leg-steps";
 import AccessLegSummary from "./access-leg-summary";
 import LegDiagramPreview from "./leg-diagram-preview";
@@ -29,6 +29,7 @@ interface Props {
     showApproximateTravelTime?: boolean;
     showElevationProfile: boolean;
     showLegIcon: boolean;
+    AccessLegFooter?: FunctionComponent<AccessLegFooterProps>;
     TransitLegSubheader?: FunctionComponent<TransitLegSubheaderProps>;
 }
 interface State {

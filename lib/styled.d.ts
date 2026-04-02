@@ -47,6 +47,7 @@ export declare const InterlineDot: import("styled-components").StyledComponent<"
 export declare const InterlineName: import("styled-components").StyledComponent<"div", any, {}, never>;
 export declare const IntermediateStops: import("styled-components").StyledComponent<"ol", any, {}, never>;
 export declare const ItineraryBody: import("styled-components").StyledComponent<"ol", any, {}, never>;
+export declare const AccessLegDescriptionHeading: import("styled-components").StyledComponent<"span", any, {}, never>;
 export declare const LegBody: import("styled-components").StyledComponent<"div", any, {}, never>;
 export declare const LegClickable: import("styled-components").StyledComponent<"div", any, {}, never>;
 /**

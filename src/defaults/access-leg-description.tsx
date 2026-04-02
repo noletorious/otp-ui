@@ -12,6 +12,7 @@ const { ensureAtLeastOneMinute, toHoursMinutesSeconds } = coreUtils.time;
 
 interface Props extends HTMLAttributes<HTMLSpanElement> {
   config: Config;
+  headingAs?: React.ElementType;
   leg: Leg;
 }
 
@@ -75,7 +76,8 @@ export default function AccessLegDescription({
   className,
   config,
   leg,
-  style
+  style,
+  headingAs
 }: Props): ReactElement {
   const intl = useIntl();
   const { companies, formatDuration, units } = config;
@@ -101,10 +103,14 @@ export default function AccessLegDescription({
   return (
     // Return an HTML element which is passed a className (and style props)
     // for styled-components support.
-    <span
-      className={`${className || ""} ${
+    <S.AccessLegDescriptionHeading
+      as={headingAs ?? "span"}
+      className={[
+        className,
         isTransferLeg && distance === 0 ? "transfer-leg" : "walk-leg"
-      }`}
+      ]
+        .filter(Boolean)
+        .join(" ")}
       style={style}
     >
       {distance > 0 ? (
@@ -152,6 +158,6 @@ export default function AccessLegDescription({
           }}
         />
       )}
-    </span>
+    </S.AccessLegDescriptionHeading>
   );
 }

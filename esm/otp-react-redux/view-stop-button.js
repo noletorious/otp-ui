@@ -21,12 +21,13 @@ var ViewStopButton = /*#__PURE__*/function (_Component) {
     }
     _this = _callSuper(this, ViewStopButton, [].concat(args));
     _this.onClick = function () {
+      var _stop$gtfsId;
       var _this$props = _this.props,
         onStopClick = _this$props.onStopClick,
         stop = _this$props.stop,
         stopId = _this$props.stopId;
       onStopClick(_objectSpread(_objectSpread({}, stop), {}, {
-        stopId: "gtfsId" in stop ? stop.gtfsId : stopId
+        stopId: (_stop$gtfsId = stop === null || stop === void 0 ? void 0 : stop.gtfsId) !== null && _stop$gtfsId !== void 0 ? _stop$gtfsId : stopId
       }));
     };
     return _this;

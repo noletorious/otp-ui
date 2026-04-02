@@ -42,6 +42,8 @@ var ItineraryBody = function ItineraryBody(_ref) {
     TimeColumnContent = _ref.TimeColumnContent,
     _ref$toRouteAbbreviat = _ref.toRouteAbbreviation,
     toRouteAbbreviation = _ref$toRouteAbbreviat === void 0 ? defaultRouteAbbr : _ref$toRouteAbbreviat,
+    AccessLegFooter = _ref.AccessLegFooter,
+    TransitLegFooter = _ref.TransitLegFooter,
     TransitLegSubheader = _ref.TransitLegSubheader,
     TransitLegSummary = _ref.TransitLegSummary;
   /*
@@ -96,6 +98,8 @@ var ItineraryBody = function ItineraryBody(_ref) {
         showViewTripButton: showViewTripButton,
         TimeColumnContent: TimeColumnContent,
         toRouteAbbreviation: toRouteAbbreviation,
+        AccessLegFooter: AccessLegFooter,
+        TransitLegFooter: TransitLegFooter,
         TransitLegSubheader: TransitLegSubheader,
         TransitLegSummary: TransitLegSummary
       }));

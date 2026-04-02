@@ -126,6 +126,7 @@ var TransitLegBody = /*#__PURE__*/function (_Component) {
         showAlertEffectiveDateTimeText = _this$props2.showAlertEffectiveDateTimeText,
         showViewTripButton = _this$props2.showViewTripButton,
         timeZone = _this$props2.timeZone,
+        TransitLegFooter = _this$props2.TransitLegFooter,
         TransitLegSubheader = _this$props2.TransitLegSubheader,
         TransitLegSummary = _this$props2.TransitLegSummary,
         transitOperator = _this$props2.transitOperator;
@@ -285,7 +286,9 @@ var TransitLegBody = /*#__PURE__*/function (_Component) {
             seconds: leg.averageWait
           })
         }
-      }))))));
+      }))))), TransitLegFooter && /*#__PURE__*/React.createElement(TransitLegFooter, {
+        leg: leg
+      }));
     }
   }]);
 }(Component);

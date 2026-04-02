@@ -69,6 +69,8 @@ export default function PlaceRow(_ref) {
     _ref$TimeColumnConten = _ref.TimeColumnContent,
     TimeColumnContent = _ref$TimeColumnConten === void 0 ? DefaultTimeColumnContent : _ref$TimeColumnConten,
     toRouteAbbreviation = _ref.toRouteAbbreviation,
+    AccessLegFooter = _ref.AccessLegFooter,
+    TransitLegFooter = _ref.TransitLegFooter,
     TransitLegSubheader = _ref.TransitLegSubheader,
     TransitLegSummary = _ref.TransitLegSummary;
   // NOTE: Previously there was a check for itineraries that changed vehicles
@@ -159,6 +161,7 @@ export default function PlaceRow(_ref) {
     showAlertEffectiveDateTimeText: showAlertEffectiveDateTimeText,
     showViewTripButton: showViewTripButton,
     timeZone: config.homeTimezone,
+    TransitLegFooter: TransitLegFooter,
     TransitLegSubheader: TransitLegSubheader,
     TransitLegSummary: TransitLegSummary,
     transitOperator: coreUtils.route.getTransitOperatorFromLeg(leg, config.transitOperators)
@@ -179,6 +182,7 @@ export default function PlaceRow(_ref) {
     showApproximateTravelTime: showApproximateAccessLegTravelTimes,
     showElevationProfile: showElevationProfile,
     showLegIcon: showLegIcon,
+    AccessLegFooter: AccessLegFooter,
     TransitLegSubheader: TransitLegSubheader
   }))), showMapButtonColumn && /*#__PURE__*/React.createElement(S.MapButtonColumn, {
     hideBorder: "true"
